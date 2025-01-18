@@ -128,9 +128,8 @@ export type Crudapp = {
           "pda": {
             "seeds": [
               {
-                "kind": "account",
-                "path": "journal_entry.title",
-                "account": "journalEntryState"
+                "kind": "arg",
+                "path": "title"
               },
               {
                 "kind": "account",

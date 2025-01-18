@@ -53,7 +53,7 @@ pub struct CreateEntry<'info> {
 pub struct UpdateEntry<'info> {
   #[account(
     mut,
-    seeds = [journal_entry.title.as_bytes(), owner.key().as_ref()],
+    seeds = [title.as_bytes(), owner.key().as_ref()],
     bump,
     realloc = 8 + JournalEntryState::INIT_SPACE,
     realloc::payer = owner,
